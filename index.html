@@ -1,0 +1,166 @@
+<html>
+<head>
+<link rel="icon" href="img/Untitled.png" type="image" />
+<title>welcome to Lovely ♥ Network</title>
+
+    <body background="img/bg.jpg"/>
+</head>
+<body>
+  <div>
+  <form action="login.php" method="post" name="loginform" id="loginform">
+  <table>
+   <tr>
+    <th rowspan="2"><a href="index.php"><img src="img/logo.png" alt="Lovely ♥ Network"/></a></th>
+    <td>UserName: <input name="userid" type="text" id="userid"/></td><td>Password: <input name="password" type="password"/></td><td>
+       <input type="submit" value="Login"/></td>
+	</tr>
+	<tr>
+	<td align="right"><input name="cc" type="checkbox" checked="checked" id="cc"/>keep me loged in</td>
+        <td>&nbsp;&nbsp;&nbsp; <a href="forgotpassword.php">forgot your password?</a></td>
+    	</tr> 
+  </table>
+    </form>
+  </div>
+    <div>
+    <form action="signup.php" method="POST" name="signupform" id="signupform" onSubmit="return logvalidate()">
+    <table align="center">
+        <tr>
+            <td valign="bottom" style="color: #FF0066">
+                Lovely ♥ Network helps you to connect with them :&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td align="right" colspan="4" style="color: #000066">
+                <span style="font-size: large; font-weight: bold; ">Sign Up</span>
+                <br/>
+                <span>its free and always will be</span></td>
+        </tr>
+        <tr>
+            <td align="center" style="font-size: large; color: #FF0000">
+                !!!who cares you!!!&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; </td>
+            <td colspan="4">
+                <hr />
+            </td>
+        </tr>
+        <tr>
+            <td rowspan="10">
+                <img alt="Lovely ♥ Network" height="320" src="img/main.png" /></td>
+            <td>
+                First Name:</td>
+            <td colspan="3">
+                <input id="fname" type="text" name="fname" /></td>
+        </tr>
+        <tr>
+            <td>
+                Last Name:</td>
+            <td colspan="3">
+                <input id="lname" type="text" name="lname" /></td>
+        </tr>
+        <tr>
+            <td>
+                Username:</td>
+            <td colspan="3">
+                <input id="username" type="text" name="username" /></td>
+        </tr>
+        <tr>
+            <td>
+                Your Email:</td>
+            <td colspan="3">
+                <input id="email" type="text" name="email" /></td>
+        </tr>
+        <tr>
+            <td>
+                New Password:</td>
+            <td colspan="3">
+                <input id="password" type="text" name="password" /></td>
+        </tr>
+        <tr>
+            <td>
+                Re Enter Password:</td>
+            <td colspan="3">
+                <input id="rpassword" type="text" name="rpassword" /></td>
+        </tr>
+        <tr>
+            <td>
+                Contact:</td>
+            <td colspan="3">
+                <input id="contact" type="text" name="contact" /></td>
+        </tr>
+        <tr>
+            <td>
+                I am:</td>
+            <td colspan="2">
+                <select id="gender" name="gender">
+                    <option>Gender</option>
+                    <option>Male</option>
+                    <option>Female</option>
+                </select></td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                Birthday:</td>
+            <td>
+                <select name="month">
+                    <option value="Month:">Month:</option>
+	
+	<script type="text/javascript">
+	
+		var m=new Array("","Jan","Feb","Mar","Apr","May","Jun","Jul","Aug","Sep","Oct","Nov","Dec");
+		for(i=1;i<=m.length-1;i++)
+		{
+			document.write("<option value='"+i+"'>" + m[i] + "</option>");
+		}	
+	</script>	
+	        </select>
+             </td>
+            <td>
+             <select name="day">
+                  <option value="Day:">Day:</option>	
+	<script type="text/javascript">
+	
+		for(i=1;i<=31;i++)
+		{
+			document.write("<option value='"+i+"'>" + i + "</option>");
+		}
+		
+	</script>
+	
+	            </select></td>
+            <td>
+                <select name="year">
+                    <option value="Year:">Year:</option>
+	
+	<script type="text/javascript">
+	
+		for(i=2010;i>=1960;i--)
+		{
+			document.write("<option value='"+i+"'>" + i + "</option>");
+		}
+
+    </script>
+	
+	            </select></td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        <tr>
+            <td>
+                &nbsp;</td>
+            <td>
+                &nbsp;</td>
+            <td colspan="2">
+                <input id="Submit" name="submit" title="submit" type="submit" value="Sign Up" /></td>
+            <td>
+                &nbsp;</td>
+        </tr>
+        </table>
+    </div>
+ </body>
+</html>
